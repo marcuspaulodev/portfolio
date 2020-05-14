@@ -9,7 +9,14 @@ body{
   background-image: url('../img/fundo.jpg');
   background-size: auto 100vh;
   font-family:Arial;
-  height: 100vh
+  height: 100vh;
+  font-size: 12px;
+}
+
+@media (min-width: 400px){
+    body{
+        font-size: 14px;
+    }
 }
 
 header {
@@ -58,6 +65,13 @@ a:hover {
   text-align: center;
  
 }
+
+.site-title {
+    color: whitesmoke;
+    text-align: center;
+    font-size: 3em;
+   
+  }
 
 .img-portfolio {
     width: 180px;
