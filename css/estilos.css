@@ -26,6 +26,11 @@ header {
   top: 0;
 }
 
+.menu a {
+    padding: 10px 20px;
+    display: block;
+}
+
 .menu ul{
   display: flex;
   justify-content: space-around;
@@ -38,10 +43,13 @@ header {
 a {
   color: teal;
   text-decoration: none;
+
 }
 
 a:hover {
   text-decoration: underline;
+  background-color: teal;
+  color: whitesmoke;
 }
 
 .site-subtitle,
