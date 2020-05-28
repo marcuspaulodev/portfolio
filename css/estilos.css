@@ -5,8 +5,10 @@
 }
 
 body {
-  background-image: url('../img/fundo.jpg');
-  background-size: auto 100vh;
+  background-image: 
+    linear-gradient(rgba(135,206,250,0.8),rgba(135,206,250,0.8)),
+    url('../img/fundo7.jpg');
+  background-size: 100vw 100vh;
   height: 100vh;
   font-family: 'Roboto', sans-serif;
 }
@@ -63,7 +65,7 @@ header {
 }
 
 .site-title {
-  color: whitesmoke;
+  color: black;
   font-family: 'Dancing Script', cursive;
   font-size: 4em;
   line-height: 1em;
@@ -72,7 +74,7 @@ header {
 }
 
 .site-subtitle {
-  color: silver;
+  color:gray;
   font-style: italic;
   font-weight: lighter;
   text-align: center;
