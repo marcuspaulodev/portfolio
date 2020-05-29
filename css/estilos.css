@@ -81,22 +81,49 @@ header {
   font-size: 2em;
 }
 
+
+.sobre,
 .contato,
 .portfolio {
+  background: white;  
   padding: 1em;
+  height: 100vh;
 }
 
+.sobre h2,
 .contato h2,
 .portfolio h2 {
-  color: white;
-  font-family: 'Carter One', cursive;
+  color: teal;
+  /*font-family: 'Ro', cursive;*/
+  margin-top: 2em;
+  margin-left: 2em;
+  text-decoration: underline;
+  font-weight: bold;
   font-size: 2.2em;
   margin-bottom: .5em;
 }
 
+.sobre p {
+  font-size: 1.2em;
+  text-align: justify;  
+  color: teal;
+  margin: 2em 11em -1em 14em;
+
+}
+
+.sobre figure {
+  float: inline-start;
+  width: 180px;
+  margin: 2em 2em 0em 10em;
+}
+
+.sobre img{
+  border-radius: 30%;
+  width: 180px;
+}
+
  .grid {
   color: silver;
-  display: grid;
   gap: 1em;
   align-content: center;
   justify-content: center;
