@@ -82,12 +82,18 @@ header {
 }
 
 
-.sobre,
-.contato,
-.portfolio {
-  background: white;  
+.sobre
+{
+  background: whitesmoke;  
   padding: 1em;
   height: 100vh;
+  
+}
+
+.contato {
+  background: whitesmoke;  
+  padding: 1em;
+  height: 30vh;
 }
 
 .sobre h2,
@@ -97,40 +103,122 @@ header {
   /*font-family: 'Ro', cursive;*/
   margin-top: 2em;
   margin-left: 2em;
-  text-decoration: underline;
+  text-decoration: none;
+  text-align: center;
   font-weight: bold;
-  font-size: 2.2em;
+  font-size: 1.7em;
   margin-bottom: .5em;
 }
 
-.sobre p {
-  font-size: 1.2em;
-  text-align: justify;  
+.sobre{
+	background:whitesmoke;
+	color:teal;
+	font-size:1em;
+	line-height: 1.7em;
+	padding:1em 1em 3em 1em;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+
+.texto-sobre{
+	padding:2em;
+}
+
+.grid-sobre{
+	display:grid; /*declaracao do grid*/;
+	gap:1em;
+	background:whitesmoke;
+	grid-template-columns:300px 800px;
+	height:auto;
+	width:auto;
+}
+
+
+.div-selfie{
+	text-align:center;
+	margin:4.5em auto 0 auto;
+}
+
+.div-selfie img{
+	width:180px;
+	clip-path: circle(50% at 50% 50%);
+}
+
+.grid {
+  display: grid;
   color: teal;
-  margin: 2em 11em -1em 14em;
-
-}
-
-.sobre figure {
-  float: inline-start;
-  width: 180px;
-  margin: 2em 2em 0em 10em;
-}
-
-.sobre img{
-  border-radius: 30%;
-  width: 180px;
-}
-
- .grid {
-  color: silver;
-  gap: 1em;
+  gap: 4em;
   align-content: center;
   justify-content: center;
-  text-align: center;
+  grid-template-columns:300px 300px 300px 300px;  
+  
 }
 
-@media (min-width: 400px) {
+.curriculo{
+	background:whitesmoke;
+	height:auto;
+	font-size:.8em;
+	line-height: 1.5em;
+	color: teal;
+	padding:3em 1em 1em 1em;
+	display:grid;
+	justify-content:center;
+	align-items:center;
+}
+
+
+.grid-curriculo{
+	display:grid; /*declaracao do grid*/;
+	gap:1em;
+	background:whitesmoke;
+	grid-template-columns:300px 800px;
+
+}
+
+.div-titulo-cv{
+	text-align:center;
+	margin:0 auto;
+	padding:2em;
+}
+
+.div-titulo-cv h2{
+	padding-bottom:0.4em;
+	border-bottom:3px solid black;
+	text-transform: uppercase;
+	font-size:1.2em;
+}
+
+
+.div-texto-cv h3{
+	margin-bottom: 1.1em;
+	font-weight:400;
+	color:teal;
+}
+
+.div-texto-cv{
+	padding:2em;
+}
+
+.div-texto-cv p{
+	margin-bottom:2.2em;
+}
+
+.instituicao-cv {
+	font-family: 'roboto', serif;
+}
+
+.portfolio{
+  height:auto;
+	padding:2em;
+	background:whitesmoke;
+	justify-content: center;
+  align-content: center;  
+  width: 100vw;
+}
+
+
+/*@media (min-width: 400px) {
   .contato,
   .portfolio {
     padding: 3em 2em 2em;
@@ -141,6 +229,8 @@ header {
     grid-template-columns: 200px 200px;
     height: calc(100vh - 4.5em - 75px);
   }
+
+
 }
 
 @media (min-width: 940px) {
@@ -153,6 +243,34 @@ header {
     grid-template-columns: repeat(4, 200px);
     height: calc(100vh - 8em - 75px);
   }
+  
+}*/
+
+@media (max-width: 1028px){
+  .grid-sobre{
+    grid-template-columns:repeat(1, auto);
+    padding:1em;
+  
+  }
+
+  .texto-sobre{
+		height:auto;
+		padding:0;
+  }
+  
+  .grid-curriculo{
+    grid-template-columns:repeat(1, auto);
+  
+  }
+  
+  .div-texto-cv{
+		padding:1em;
+  }
+  
+  .grid{
+    grid-template-columns:repeat(1, auto);
+    padding:1em;    
+  }
 }
 
 .portfolio figcaption {
@@ -161,9 +279,9 @@ header {
 
 .img-portfolio {
   border-radius: 10px;
-  height: 180px;
-  object-fit: cover;
-  width: 180px;
+  height: 230px;
+  width: 230px;
+  object-fit: cover;  
   transition: transform 500ms;
 }
 
@@ -182,7 +300,7 @@ header {
 }
 
 .contato a {
-  color: whitesmoke;
+  color: black;
   font-size: 4em;
   text-decoration: none;
 }
